@@ -1,8 +1,8 @@
 # IEEE Workshop Part 1 - Structs
-This is the first part of a three-part series on writing better C programs! I go over a variety of concepts here, and each topic varies in depth. If you're unfamiliar with the concepts, you should be able to pick them up pretty quickly.
+This is the first part of a three-part series on writing better C programs! I go over a variety of concepts here, and each topic varies in depth. If you're unfamiliar with the concepts covered in this workshop, you should be able to pick them up pretty quickly.
 
 ## What is a struct?
-A `struct`, which is short for Structure, is a user-defined data type. It's a bit like the concept of an "Object" you'd see in an Object Oriented Programming language.
+A `struct`, which is short for Structure, is a user-defined data type. It's a bit an "Object" you'd see in an Object Oriented Programming language.
 
 In a struct, you can group together multiple types of data in a block of memory.
 
@@ -88,7 +88,7 @@ char get_value(const struct info_t *info)
 ```
 
 ## Initialization
-Although you can initialize a struct by declaring it and then assigning all it's fields, there are better ways to do this. As shown in the example above, you can initialize a struct by using curly braces `{}`. Here's an example:
+Although you can initialize a struct by declaring it and then initializing all of its members, there are better ways to do this. As shown in the example above, you can initialize a struct by using curly braces `{}`. Here's an example:
 ```
 int main(int argc, char *argv[])
 {
@@ -98,6 +98,9 @@ int main(int argc, char *argv[])
     }
 
     const struct info_t info = {.important = 1, .also_important = 'c'};
+
+    // You can also omit the struct member names and initialize them in order:
+    const struct info_t info_other = {1, 'c'};
 }
 ```
 

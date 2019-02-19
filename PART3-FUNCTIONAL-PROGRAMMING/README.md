@@ -1,4 +1,4 @@
-# IEEE Workshop Part 4 - Functional-ish Programming
+# IEEE Workshop Part 3 - Functional-ish Programming
 Did you know that you can write functional-ish programs in C? There's actually some pretty fancy things you can do with C. Let's go over some of them.
 
 ## Variadic Functions

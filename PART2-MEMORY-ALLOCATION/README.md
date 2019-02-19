@@ -4,7 +4,7 @@ Now let's talk memory allocation. If you've written C before, you've surely deal
 ## The Basics of Dynamic Memory Allocation
 In C, when you want a piece of memory, you have two options. You can either allocate memory on the [stack](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html) or on the [heap](https://www.gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html).
 
-When you allocate memory on the stack, it is of fixed size. You have to define it's size as a constant (must be defined at compile-time). So, you might do something like this:
+When you allocate memory on the stack, it has to be of fixed size. You have to define its size as a constant (which must be defined at compile-time). So, you might do something like this:
 ```
 int func()
 {
@@ -19,7 +19,7 @@ int func()
 
 There are two things to note here. First, you need to declare the size (as mentioned before). If you don't know what size the array must be, then you can't use this method. Secondly, the array is allocated on the stack, so when the function returns, that stack frame is popped off and the array is lost.
 
-What happens if you need the memory to be of a size that is unknown at compile-time? You use `<stdlib.h>`. Here's how you allocate some memory on the heap:
+What happens if you need the memory to be of a size that is unknown at compile-time, or you need an array that will persist even when the function returns? You use `<stdlib.h>`. Here's how you allocate some memory on the heap:
 ```
 int func()
 {
@@ -33,7 +33,7 @@ int func()
 }
 ```
 
-Functionally, the two examples are the same. The difference here is that you can create an array of any size, known or unknown at compile time.
+Functionally, the two examples are the same; you ask for space, and you're given space. The difference here is that you can create an array of any size, known or unknown at compile time.
 
 Things get tricky with this fancy dynamic memory allocation stuff. Notice that I call `free(array)` before the function returns? You need to do this, because otherwise the memory you allocated will remain in the heap, and you won't have any way to reference it. This is known as a [memory leak](https://en.wikipedia.org/wiki/Memory_leak).
 
