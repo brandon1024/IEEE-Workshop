@@ -35,8 +35,13 @@ void demonstrate_struct_usage()
 
 	// Allocate a struct on the heap
 	struct point_t *p1 = (struct point_t *)malloc(sizeof(struct point_t));
-	p1->x = 12;
-	p1->y = 44;
+	if(p1 == NULL) {
+		perror("Fatal error: Cannot allocate memory.\n");
+		exit(EXIT_FAILURE);
+	}
+
+	p1->x = p0.x;
+	p1->y = p0.y;
 	p1->id = 1;
 
 	free(p1);
@@ -44,6 +49,10 @@ void demonstrate_struct_usage()
 	// Allocate an array of structs on the heap
 	size_t len = 10;
 	struct point_t *points = (struct point_t *)malloc(sizeof(struct point_t) * len);
+	if(points == NULL) {
+		perror("Fatal error: Cannot allocate memory.\n");
+		exit(EXIT_FAILURE);
+	}
 
 	free(points);
 }

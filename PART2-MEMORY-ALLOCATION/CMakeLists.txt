@@ -3,4 +3,4 @@ PROJECT(IEEEP2 C)
 
 SET(CMAKE_C_STANDARD 99)
 
-ADD_EXECUTABLE(IEEEP2 main.c main.h)
+ADD_EXECUTABLE(IEEEP2 main.c main.h fibonacci-gen.c fibonacci-gen.h)
