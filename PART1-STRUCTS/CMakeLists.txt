@@ -3,4 +3,4 @@ PROJECT(IEEEP1 C)
 
 SET(CMAKE_C_STANDARD 99)
 
-ADD_EXECUTABLE(IEEEP1 main.c main.h)
+ADD_EXECUTABLE(IEEEP1 main.c strbuf.c strbuf.h)
