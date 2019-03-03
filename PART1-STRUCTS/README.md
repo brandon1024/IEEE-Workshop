@@ -1,4 +1,4 @@
-# IEEE Workshop Part 1 - Structs
+# C Workshop Part 1 - Structs
 This is the first part of a three-part series on writing better C programs! I go over a variety of concepts here, and each topic varies in depth. If you're unfamiliar with the concepts covered in this workshop, you should be able to pick them up pretty quickly.
 
 ## What is a struct?

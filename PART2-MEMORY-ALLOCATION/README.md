@@ -1,4 +1,4 @@
-# IEEE Workshop Part 2 - Memory Allocation
+# C Workshop Part 2 - Memory Allocation
 Now let's talk memory allocation. If you've written C before, you've surely dealt with it. Although I am going to cover the basics, I also want to touch on **good** patterns (rules to follow) around dynamic memory allocation.
 
 ## The Basics of Dynamic Memory Allocation

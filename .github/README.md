@@ -1,4 +1,4 @@
-# IEEE Workshop - Pointers on C
+# C Workshop - Pointers on C
 Welcome :wave: Chances are you stumbled here through the workshop I gave for IEEE UNB. The purpose of this workshop is to give engineering students some helpful tips on writing better C. The C programming language is arguably the most difficult language to master, but I hope that these materials will help you take another step forward.
 
 In this workshop, I'm going to cover four main concepts:
