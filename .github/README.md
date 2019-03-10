@@ -26,8 +26,8 @@ First things first, you want to install CLion. CLion is a powerful development e
 Next, you want to clone the repository using git via the command line.
 ```
 cd ~/dev
-git clone https://github.com/brandon1024/IEEE-Workshop.git
-cd IEEE-Workshop
+git clone https://github.com/brandon1024/c-Workshop.git
+cd c-workshop
 ```
 
 Next, start CLion and select `Open`. Browse to the directory that you cloned the project to, and open the project.
